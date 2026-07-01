@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "vendor-design-plugins",
+  "description": "Delivery Hero Vendor Design — Claude Code plugins for the Vendor design and product team.",
+  "owner": {
+    "name": "Delivery Hero — Vendor Design Engineering"
+  },
+  "plugins": [
+    {
+      "name": "vendor-canvas",
+      "description": "Bootstrap the Vendor Canvas design prototyping hub: /onboard clones, installs, and runs it with no manual GitHub clone or terminal setup.",
+      "source": "./",
+      "category": "development",
+      "homepage": "https://github.com/deliveryhero/vendor-canvas"
+    }
+  ]
+}

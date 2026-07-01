@@ -1,0 +1,11 @@
+{
+  "name": "vendor-canvas",
+  "description": "Bootstrap the Delivery Hero Vendor Canvas design prototyping hub. Adds /onboard, which clones, installs, and runs the Canvas without a manual GitHub clone or terminal setup.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Delivery Hero — Vendor Design Engineering",
+    "url": "https://github.com/deliveryhero/vendor-canvas"
+  },
+  "homepage": "https://github.com/deliveryhero/vendor-canvas",
+  "keywords": ["delivery-hero", "vendor-canvas", "onboarding", "bootstrap", "design", "prototyping"]
+}
