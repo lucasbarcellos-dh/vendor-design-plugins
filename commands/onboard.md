@@ -127,15 +127,21 @@ Tell the user the app is running at [http://localhost:5173](http://localhost:517
 
 ## Phase 5: Success
 
-Tell the user:
+The Canvas commands (`/create-project`, `/run`, `/deploy`, `/figma`) and design skills are **project-scoped to the repo** — they load only when this session's working directory IS the cloned repo. This session was started elsewhere, so it must be pointed at the clone with `/cd`. **You (Claude) cannot run `/cd` yourself — it is user-invoked only by design.** So instruct the user to run it; do not claim the commands are available yet.
+
+Tell the user (substitute `{target}` with the actual clone path):
 
 > "You're all set, {displayName}! 🎉
 >
 > - Repo: `{target}`
 > - Your folder: `src/users/{username}/`
-> - Dev server: [http://localhost:5173](http://localhost:5173)
+> - Dev server: [http://localhost:5173](http://localhost:5173) (already running — no need to restart it)
 >
-> **Next step**: Run `/create-project` to create your first project."
+> **One quick step to load the Canvas commands.** They live inside the repo, so point this session at it:
+> 1. Run `/cd {target}`
+> 2. Then run `/create-project` to start your first project.
+>
+> `/cd` keeps this same chat — no restart needed. If `/create-project` still doesn't appear right after, fully restart Claude Code from `{target}` and it'll load."
 
 ---
 
